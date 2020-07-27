@@ -9,7 +9,7 @@ import os
 from serial import serialwin32 as serial
 import numpy as np
 import sys, string,subprocess
-#import nidaqmx
+import nidaqmx
 
 class ICE:
     def __init__(self,BoxNum,SlotNum):
