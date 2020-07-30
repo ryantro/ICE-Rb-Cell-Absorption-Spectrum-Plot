@@ -108,7 +108,7 @@ def loggingLoops(IB,iArray):
     '''
     logDir = makefolder(os.getcwd()+'\\testlogging\\'+time.strftime("%Y-%m-%d_%H-%M-%S"))
     print('Log Dirrectory: %' %logDir)
-    IB.IceSend(1,1,'CurrLim 125')
+    IB.IceSend('CurrLim 125')
     ### OPEN FILE ###
     PIData = open(logDir+'\\PIData.csv', 'a+')
     ### LOGGING LOOPS ###
